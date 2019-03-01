@@ -22,7 +22,7 @@ otherwise you will have problems such as
 "No such port: 'Valve X' while looking for port 'Master.slave.Valve X'"
 
 # Problem-unsolved
-In the orocos deployment manuel, the statement path and import have some differences on "whether search the subdirectories" and "whether it is the preload or directly load". My question is whether the import searches all the paths or the path searched is indicated by the $ROS_pACKAGE_PATH?
+In the orocos deployment manuel, the statement path and import have some differences on "whether search the subdirectories" and "whether it is the preload or directly load". My question is whether the import searches all the paths or the path searched is indicated by the $ROS_ACKAGE_PATH?
 
 
 
