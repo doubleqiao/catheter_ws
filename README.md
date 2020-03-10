@@ -24,7 +24,7 @@ otherwise you will have problems such as
 # Problem-unsolved
 In the orocos deployment manuel, the statement path and import have some differences on "whether search the subdirectories" and "whether it is the preload or directly load". My question is whether the import searches all the paths or the path searched is indicated by the $ROS_ACKAGE_PATH?
 
-## Workspace overlay?
+## Workspace overlay
 
 ### Why workspace overlay?
 Normally only **one** workspace's path can be added to the environment variable ROS_PACKAGE_PATH, which is the searching path of ROS and is changed by "source path_of_workspace/devel/setup.sh".
