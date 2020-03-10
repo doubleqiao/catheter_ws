@@ -21,9 +21,6 @@ otherwise you will have problems such as
 [Connect] Could not load configuration from config/Slave_1001.xml
 "No such port: 'Valve X' while looking for port 'Master.slave.Valve X'"
 
-# Problem-unsolved
-In the orocos deployment manuel, the statement path and import have some differences on "whether search the subdirectories" and "whether it is the preload or directly load". My question is whether the import searches all the paths or the path searched is indicated by the $ROS_ACKAGE_PATH?
-
 ## Workspace overlay
 
 ### Why workspace overlay?
@@ -35,6 +32,10 @@ In order to achieve "communication" between different workspaces,different works
 After making sure that the path of the workspace (for example workspace A) you want to "communicate" with is included in the ROS_PACKAGE_PATH, then build the workspace at hand (workspace B) by using catkin_make in the same terminal. Then do "source path_of_workspace_B/devel/setup.sh". By using "echo $ROS_PACKAGE_PATH" you will see the path list as "path_of_workspace_B/src: path_of_workspace_A/src: ...". In the same terminal, you can build the wrokspace C then. 
 
 The same rule applies for multiple workspaces.
+
+
+# Problem-unsolved
+In the orocos deployment manuel, the statement path and import have some differences on "whether search the subdirectories" and "whether it is the preload or directly load". My question is whether the import searches all the paths or the path searched is indicated by the $ROS_ACKAGE_PATH?
 
 # Some learning aspects-ROS
 In ROS, the ROS_PACKAGE_PATH is used for the ROS system to search packages, and that is why we need to do the source. The goal of source is to change the environmental variable ROS_PACKAGE_PATH to include the path where your workspace or the packages are in.
